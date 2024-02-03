@@ -1,0 +1,28 @@
+{
+  "name": "project-01",
+  "version": "1.0.0",
+  "description": "This is food ordering App developed by - Vishal.",
+  "main": "App.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevVishal99/project.git"
+  },
+  "author": "Vishal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevVishal99/project/issues"
+  },
+  "homepage": "https://github.com/DevVishal99/project#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
