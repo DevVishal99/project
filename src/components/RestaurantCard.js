@@ -1,17 +1,20 @@
-const RetaurantCard = () => {
+import { RES_IMG_URL } from "../utils/constants";
+
+const RetaurantCard = (props) => {
+  const { resData } = props;
+
+  const { name, cuisines, avgRating, cloudinaryImageId } = resData.info;
+
   return (
     <div className="res-card">
       <div className="res-card-img">
-        <img
-          src="https://b.zmtcdn.com/data/pictures/5/19064995/e77f6d8e69c6b5f23548548b806cd709_featured_v2.jpg"
-          alt="res-img"
-        />
+        <img src={RES_IMG_URL + cloudinaryImageId} alt="res-img" />
       </div>
       <div className="res-card-items">
-        <h2>Restaurant Name</h2>
-        <h3>cusines</h3>
-        <h3>Ratings</h3>
-        <h3>Cost for two</h3>
+        <h2>{name}</h2>
+        <h3>{cuisines.join(", ")}</h3>
+        <h3>{avgRating}</h3>
+        <h3></h3>
       </div>
     </div>
   );
